@@ -1,0 +1,117 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "this-feature-is-to-test-registration-functionalities;this-scenario-is-to-validate-student-registration",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "This scenario is to validate student registration",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 436399400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4187379199
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to the demoqa registration page",
+            "match": {
+              "location": "features\\step_definitions\\registration.step.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3157699
+            },
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "Password",
+                      "FullName",
+                      "email",
+                      "Terms"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Azharudeen",
+                      "Test@1234",
+                      "Azharudeen Jaferali",
+                      "azharudeen@gmail.com",
+                      "Yes"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Ram",
+                      "Hello@1234",
+                      "Ram Kumar",
+                      "ramkumar@gmail.com",
+                      "Yes"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "provide valid student details and submit",
+            "match": {
+              "location": "features\\step_definitions\\registration.step.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 532300
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "validate if the registration is successful",
+            "match": {
+              "location": "features\\step_definitions\\registration.step.ts:26"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 108800599,
+              "error_message": "locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\n    at RegistrationPage.<anonymous> (E:\\cucumber-playwright-july\\pages\\registerpage.ts:20:29)\n    at E:\\cucumber-playwright-july\\pages\\registerpage.ts:8:71\n    at __awaiter (E:\\cucumber-playwright-july\\pages\\registerpage.ts:4:12)\n    at RegistrationPage.fillRegistration (E:\\cucumber-playwright-july\\pages\\registerpage.ts:23:16)\n    at World.<anonymous> (E:\\cucumber-playwright-july\\features\\step_definitions\\registration.step.ts:22:16)\n    at E:\\cucumber-playwright-july\\features\\step_definitions\\registration.step.ts:8:71\n    at __awaiter (E:\\cucumber-playwright-july\\features\\step_definitions\\registration.step.ts:4:12)\n    at World.<anonymous> (E:\\cucumber-playwright-july\\features\\step_definitions\\registration.step.ts:24:12)"
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "this-feature-is-to-test-registration-functionalities",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "This feature is to test registration functionalities",
+    "tags": [],
+    "uri": "features\\registration.feature"
+  }
+]
